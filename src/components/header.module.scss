@@ -1,0 +1,26 @@
+.header {
+  padding: 1rem 0 3rem;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline-block;
+  color: #999999;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #666666;
+}
+
+.active-nav-item {
+  color: #333333;
+}
