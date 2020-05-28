@@ -11,9 +11,6 @@ const AboutPage = () => {
         <Head title="About" />
         <h1>About</h1>
         <p>bio</p>
-        <p>
-          <Link to="/contact">Want to work with me?</Link>
-        </p>
       </Layout>
     </div>
   )
