@@ -14,7 +14,7 @@ const Header = () => {
         }}
       >
         <Link className={headerStyles.title} to="/">
-          Josh Bibbey's Work
+          Josh Bibbey's Work.
         </Link>
       </Typist>
       <nav>
