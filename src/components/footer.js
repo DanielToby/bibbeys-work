@@ -47,7 +47,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.email}>
+          <a href={`mailto:${data.contentfulContactInfo.email}`}>
             <FontAwesomeIcon icon={faEnvelopeOpen} size="2x" />
           </a>
         </li>
