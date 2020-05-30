@@ -1,17 +1,32 @@
 .background {
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-color: #fff;
+}
+
+.vimeoWrapper {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
+  z-index: 1;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 800px;
   padding: 1rem;
-
+  background: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-bottom: 200px;
 }
 
 .content {

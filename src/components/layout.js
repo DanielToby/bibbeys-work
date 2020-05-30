@@ -15,23 +15,41 @@ const Layout = props => {
           url
         }
       }
+      contentfulFeatureVideo {
+        vimeoLink
+      }
     }
   `)
 
   const background = `url(${data.contentfulAsset.file.url})`
+  const vimeoId = data.contentfulFeatureVideo.vimeoLink.substring(18, 27)
+
+  const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
 
   return (
     <div
       style={{ backgroundImage: background }}
       className={layoutStyles.background}
     >
-      <div className={layoutStyles.container}>
-        <div className={layoutStyles.content}>
-          <Header />
-          {props.children}
+      <Header />
+      {console.log(vimeoId)}
+      {console.log(vimeoSrc)}
+      {props.video ? (
+        <div className={layoutStyles.vimeoWrapper}>
+          <iframe
+            title={vimeoId}
+            src={vimeoSrc}
+            className={layoutStyles.iframe}
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
         </div>
-        <Footer />
+      ) : null}
+      <div className={layoutStyles.container}>
+        <div className={layoutStyles.content}>{props.children}</div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -21,7 +21,7 @@ const IndexPage = () => {
   `)
 
   return (
-    <Layout>
+    <Layout video={true}>
       <Head title="Projects" />
       <h1>Projects</h1>
       <ol className={projectStyles.projects}>

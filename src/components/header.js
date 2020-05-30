@@ -1,28 +1,22 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+import Typist from "react-typist"
 
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      contentfulAsset(title: { eq: "logo" }) {
-        title
-        file {
-          url
-        }
-      }
-    }
-  `)
-
   return (
     <header className={headerStyles.header}>
-      <Link to="/">
-        <img
-          src={data.contentfulAsset.file.url}
-          alt={data.contentfulAsset.title}
-        />
-      </Link>
+      <Typist
+        avgTypingDelay={100}
+        cursor={{
+          show: false,
+        }}
+      >
+        <Link className={headerStyles.title} to="/">
+          Josh Bibbey's Work
+        </Link>
+      </Typist>
       <nav>
         <ul className={headerStyles.navList}>
           <li>

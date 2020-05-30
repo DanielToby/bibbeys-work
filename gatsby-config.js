@@ -19,6 +19,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
