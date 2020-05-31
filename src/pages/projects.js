@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import projectStyles from "./projects.module.scss"
 import Head from "../components/head"
 
-const IndexPage = () => {
+const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulProject(sort: { fields: publishedDate, order: DESC }) {
@@ -28,7 +28,7 @@ const IndexPage = () => {
         {data.allContentfulProject.edges.map(edge => {
           return (
             <li className={projectStyles.project}>
-              <Link to={`/${edge.node.slug}`}>
+              <Link to={`projects/${edge.node.slug}`}>
                 <h2>{edge.node.title}</h2>
                 <p>{edge.node.publishedDate}</p>
               </Link>
@@ -40,4 +40,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default ProjectsPage
