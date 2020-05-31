@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Typist from "react-typist"
 import HamburgerMenu from "react-hamburger-menu"
+import Headroom from "react-headroom"
 
 import Menu from "./menu"
 import headerStyles from "./header.module.scss"
@@ -14,8 +15,8 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <header className={headerStyles.header}>
+    <Headroom>
+      <div className={headerStyles.header}>
         <div className={headerStyles.burger}>
           <HamburgerMenu
             color="#f4f4f4"
@@ -50,8 +51,8 @@ const Header = () => {
             </div>
           )}
         </div>
-      </header>
-    </div>
+      </div>
+    </Headroom>
   )
 }
 

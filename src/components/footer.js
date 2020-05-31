@@ -6,7 +6,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelopeOpen, faPhone } from "@fortawesome/free-solid-svg-icons"
 
 import footerStyles from "./footer.module.scss"
 
@@ -34,6 +34,9 @@ const Footer = () => {
         <li className={footerStyles.footerListItem}>
           <a href={`mailto:${data.contentfulContactInfo.email}`}>EMAIL</a>
         </li>
+        <li className={footerStyles.footerListItem}>
+          <a href={`tel:${data.contentfulContactInfo.phoneNumber}`}>PHONE</a>
+        </li>
       </ul>
       <ul className={footerStyles.footerIconList}>
         <li className={footerStyles.footerListItem}>
@@ -49,6 +52,11 @@ const Footer = () => {
         <li className={footerStyles.footerListItem}>
           <a href={`mailto:${data.contentfulContactInfo.email}`}>
             <FontAwesomeIcon icon={faEnvelopeOpen} size="2x" />
+          </a>
+        </li>
+        <li className={footerStyles.footerListItem}>
+          <a href={`tel:${data.contentfulContactInfo.phoneNumber}`}>
+            <FontAwesomeIcon icon={faPhone} size="2x" />
           </a>
         </li>
       </ul>
