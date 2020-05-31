@@ -33,7 +33,7 @@ const Layout = props => {
         style={{ backgroundImage: background }}
         className={layoutStyles.background}
       >
-        {props.video ? (
+        {props.video && (
           <div className={layoutStyles.vimeoWrapper}>
             <iframe
               title={vimeoId}
@@ -44,7 +44,7 @@ const Layout = props => {
               allowfullscreen
             ></iframe>
           </div>
-        ) : null}
+        )}
         <div className={layoutStyles.container}>
           <div className={layoutStyles.content}>{props.children}</div>
         </div>
