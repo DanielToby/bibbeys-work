@@ -27,27 +27,29 @@ const Layout = props => {
   const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
 
   return (
-    <div
-      style={{ backgroundImage: background }}
-      className={layoutStyles.background}
-    >
+    <div className={layoutStyles.siteWrapper}>
       <Header />
-      {console.log(vimeoId)}
-      {console.log(vimeoSrc)}
-      {props.video ? (
-        <div className={layoutStyles.vimeoWrapper}>
-          <iframe
-            title={vimeoId}
-            src={vimeoSrc}
-            className={layoutStyles.iframe}
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+      <div
+        style={{ backgroundImage: background }}
+        className={layoutStyles.background}
+      >
+        {console.log(vimeoId)}
+        {console.log(vimeoSrc)}
+        {props.video ? (
+          <div className={layoutStyles.vimeoWrapper}>
+            <iframe
+              title={vimeoId}
+              src={vimeoSrc}
+              className={layoutStyles.iframe}
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ) : null}
+        <div className={layoutStyles.container}>
+          <div className={layoutStyles.content}>{props.children}</div>
         </div>
-      ) : null}
-      <div className={layoutStyles.container}>
-        <div className={layoutStyles.content}>{props.children}</div>
       </div>
       <Footer />
     </div>

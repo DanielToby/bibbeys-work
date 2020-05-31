@@ -21,11 +21,19 @@ const IndexPage = () => {
   `)
 
   return (
-    <Layout video={true}>
-      <Head title="Home" />
+    <Layout>
+      <Head title="Projects" />
+      <h1>Projects</h1>
       <ol className={projectStyles.projects}>
         {data.allContentfulProject.edges.map(edge => {
-          return <div></div>
+          return (
+            <li className={projectStyles.project}>
+              <Link to={`/${edge.node.slug}`}>
+                <h2>{edge.node.title}</h2>
+                <p>{edge.node.publishedDate}</p>
+              </Link>
+            </li>
+          )
         })}
       </ol>
     </Layout>

@@ -52,12 +52,12 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className={footerStyles.credit}>Daniel Toby © 2020</p>
       <a
         className={footerStyles.footerLink}
         href="https://github.com/DanielToby/bibbeys-work"
       >
-        <FontAwesomeIcon icon={faGithub} size="2x" />
+        Daniel Toby © 2020 &nbsp;
+        <FontAwesomeIcon icon={faGithub} />
       </a>
     </footer>
   )
