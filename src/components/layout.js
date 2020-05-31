@@ -27,7 +27,7 @@ const Layout = props => {
   const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
 
   return (
-    <div className={layoutStyles.siteWrapper}>
+    <body>
       <Header />
       <div
         style={{ backgroundImage: background }}
@@ -50,7 +50,7 @@ const Layout = props => {
         </div>
       </div>
       <Footer />
-    </div>
+    </body>
   )
 }
 
