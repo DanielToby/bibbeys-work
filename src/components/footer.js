@@ -32,7 +32,7 @@ const Footer = () => {
           <a href={data.contentfulContactInfo.instagram}>INSTA</a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.email}>EMAIL</a>
+          <a href={`mailto:${data.contentfulContactInfo.email}`}>EMAIL</a>
         </li>
       </ul>
       <ul className={footerStyles.footerIconList}>
