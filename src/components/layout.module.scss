@@ -2,6 +2,8 @@
   background-color: #212121;
   height: 100%;
   width: 100%;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .background {
@@ -11,6 +13,7 @@
   background-color: #fff;
   margin-left: 25px;
   margin-right: 25px;
+  background-attachment: fixed;
 }
 
 .vimeoWrapper {
@@ -34,14 +37,17 @@
   margin: 0 auto;
   max-width: 800px;
   padding: 1rem;
-  background: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin-top: 100px;
   margin-bottom: 150px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin: 100 25 150 25;
 }
 
 .content {
   flex-grow: 1;
+  border-radius: 25px;
 }

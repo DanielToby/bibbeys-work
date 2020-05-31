@@ -32,7 +32,7 @@ const Menu = () => {
               activeClassName={menuStyles.activeNavItem}
               to="/photography"
             >
-              Photography
+              Photos
             </Link>
           </li>
           <li>

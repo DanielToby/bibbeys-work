@@ -33,8 +33,6 @@ const Layout = props => {
         style={{ backgroundImage: background }}
         className={layoutStyles.background}
       >
-        {console.log(vimeoId)}
-        {console.log(vimeoSrc)}
         {props.video ? (
           <div className={layoutStyles.vimeoWrapper}>
             <iframe
