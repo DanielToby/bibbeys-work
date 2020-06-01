@@ -1,11 +1,10 @@
 .menu {
-  max-width: 100%;
-  max-height: 100px;
-  width: auto;
-  height: auto;
+  max-width: 250px;
   animation: fadeInAnimation ease 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  float: left;
+  margin-left: 5vh;
 }
 
 @keyframes fadeInAnimation {
