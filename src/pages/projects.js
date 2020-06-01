@@ -28,7 +28,7 @@ const ProjectsPage = () => {
         {data.allContentfulProject.edges.map(edge => {
           return (
             <li className={projectStyles.project}>
-              <Link to={`projects/${edge.node.slug}`}>
+              <Link to={`/projects/${edge.node.slug}`}>
                 <h2>{edge.node.title}</h2>
                 <p>{edge.node.publishedDate}</p>
               </Link>
