@@ -17,13 +17,6 @@ const Header = () => {
   return (
     <Headroom>
       <div className={headerStyles.header}>
-        <div className={headerStyles.burger}>
-          <HamburgerMenu
-            color="#f4f4f4"
-            isOpen={open}
-            menuClicked={handleBurgerClick}
-          />
-        </div>
         <div className={headerStyles.content}>
           {open ? (
             <Menu />
@@ -50,6 +43,13 @@ const Header = () => {
               )}
             </div>
           )}
+        </div>
+        <div className={headerStyles.burger}>
+          <HamburgerMenu
+            color="#f4f4f4"
+            isOpen={open}
+            menuClicked={handleBurgerClick}
+          />
         </div>
       </div>
     </Headroom>

@@ -9,19 +9,19 @@
   color: #f4f4f4;
   text-align: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
-.burger {
+.content {
   margin-top: 10px;
+  float: left;
 }
 
-.content {
-  position: relative;
-  margin: auto;
+.burger {
+  margin-top: 10px;
 }
 
 .title {
