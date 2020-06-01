@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Feature from "../components/feature"
 import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
@@ -15,16 +16,10 @@ const Layout = props => {
           url
         }
       }
-      contentfulFeatureVideo {
-        vimeoLink
-      }
     }
   `)
 
   const background = `url(${data.contentfulAsset.file.url})`
-  const vimeoId = data.contentfulFeatureVideo.vimeoLink.substring(18, 27)
-
-  const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
 
   return (
     <body>
@@ -33,18 +28,7 @@ const Layout = props => {
         style={{ backgroundImage: background }}
         className={layoutStyles.background}
       >
-        {props.video && (
-          <div className={layoutStyles.vimeoWrapper}>
-            <iframe
-              title={vimeoId}
-              src={vimeoSrc}
-              className={layoutStyles.iframe}
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-            ></iframe>
-          </div>
-        )}
+        {props.video && <Feature />}
         <div className={layoutStyles.container}>
           <div className={layoutStyles.content}>{props.children}</div>
         </div>
