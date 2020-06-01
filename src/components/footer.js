@@ -41,22 +41,22 @@ const Footer = () => {
       <ul className={footerStyles.footerIconList}>
         <li className={footerStyles.footerListItem}>
           <a href={data.contentfulContactInfo.vimeo}>
-            <FontAwesomeIcon icon={faVimeo} size="2x" />
+            <FontAwesomeIcon icon={faVimeo} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
           <a href={data.contentfulContactInfo.instagram}>
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
           <a href={`mailto:${data.contentfulContactInfo.email}`}>
-            <FontAwesomeIcon icon={faEnvelopeOpen} size="2x" />
+            <FontAwesomeIcon icon={faEnvelopeOpen} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
           <a href={`tel:${data.contentfulContactInfo.phoneNumber}`}>
-            <FontAwesomeIcon icon={faPhone} size="2x" />
+            <FontAwesomeIcon icon={faPhone} />
           </a>
         </li>
       </ul>
