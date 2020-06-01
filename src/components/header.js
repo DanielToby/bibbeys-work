@@ -24,7 +24,7 @@ const Header = () => {
             <div>
               {animateLogo ? (
                 <Typist
-                  avgTypingDelay={100}
+                  avgTypingDelay={20}
                   cursor={{
                     show: false,
                   }}
