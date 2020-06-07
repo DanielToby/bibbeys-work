@@ -5,25 +5,21 @@
   height: 75px;
   top: 0;
   font-size: medium;
-  background: #212121;
+  background: #0f1218;
   color: #f4f4f4;
   text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .content {
-  margin-top: 10px;
-  float: left;
-}
-
-.burger {
-  margin-top: 10px;
-  float: right;
-  margin-right: 10px;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
 }
 
 .title {
@@ -31,4 +27,35 @@
   text-decoration: none;
   font-size: 25px;
   color: #f4f4f4;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+}
+
+.menuContainer {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  background: #0f1218;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.separator {
+  border: 0;
+  height: 0px;
+  border-bottom: 1px solid #f4f4f4;
+  margin: auto;
+  width: 0;
+  animation: separator-width 0.5s ease-out forwards;
+}
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -1,19 +1,20 @@
 body {
-  background-color: #212121;
+  background-color: #0f1218;
+  color: #0f1218;
 }
 
 .background {
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff;
+  background-color: #0f1218;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 150px;
 }
 
 .container {
-  z-index: 1;
+  z-index: 0;
   margin: 0 auto;
   max-width: 800px;
   padding: 1rem;
@@ -25,4 +26,5 @@ body {
 .content {
   flex-grow: 1;
   border-radius: 10px;
+  background-color: #ffffff;
 }

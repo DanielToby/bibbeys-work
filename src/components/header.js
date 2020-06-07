@@ -18,30 +18,24 @@ const Header = () => {
     <Headroom>
       <div className={headerStyles.header}>
         <div className={headerStyles.content}>
-          {open ? (
-            <Menu />
+          {animateLogo ? (
+            <Typist
+              avgTypingDelay={20}
+              cursor={{
+                show: false,
+              }}
+              onTypingDone={() => {
+                setAnimateLogo(false)
+              }}
+            >
+              <Link className={headerStyles.title} to="/">
+                Josh Bibbey's Work.
+              </Link>
+            </Typist>
           ) : (
-            <div>
-              {animateLogo ? (
-                <Typist
-                  avgTypingDelay={20}
-                  cursor={{
-                    show: false,
-                  }}
-                  onTypingDone={() => {
-                    setAnimateLogo(false)
-                  }}
-                >
-                  <Link className={headerStyles.title} to="/">
-                    Josh Bibbey's Work.
-                  </Link>
-                </Typist>
-              ) : (
-                <Link className={headerStyles.title} to="/">
-                  Josh Bibbey's Work.
-                </Link>
-              )}
-            </div>
+            <Link className={headerStyles.title} to="/">
+              Josh Bibbey's Work.
+            </Link>
           )}
         </div>
         <div className={headerStyles.burger}>
@@ -52,6 +46,21 @@ const Header = () => {
           />
         </div>
       </div>
+
+      {open ? (
+        <div
+          style={{ display: "block" }}
+          className={headerStyles.menuContainer}
+        >
+          <hr className={headerStyles.separator} />
+          <Menu />
+        </div>
+      ) : (
+        <div style={{ display: "none" }} className={headerStyles.menuContainer}>
+          <hr className={headerStyles.separator} />
+          <Menu />
+        </div>
+      )}
     </Headroom>
   )
 }
