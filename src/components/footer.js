@@ -26,36 +26,56 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
       <ul className={footerStyles.footerList}>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.vimeo}>VIMEO</a>
+          <a href={data.contentfulContactInfo.vimeo} aria-label="vimeo">
+            VIMEO
+          </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.instagram}>INSTA</a>
+          <a href={data.contentfulContactInfo.instagram} aria-label="instagram">
+            INSTA
+          </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={`mailto:${data.contentfulContactInfo.email}`}>EMAIL</a>
+          <a
+            href={`mailto:${data.contentfulContactInfo.email}`}
+            aria-label="email"
+          >
+            EMAIL
+          </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={`tel:${data.contentfulContactInfo.phoneNumber}`}>PHONE</a>
+          <a
+            href={`tel:${data.contentfulContactInfo.phoneNumber}`}
+            aria-label="phone"
+          >
+            PHONE
+          </a>
         </li>
       </ul>
       <ul className={footerStyles.footerIconList}>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.vimeo}>
+          <a href={data.contentfulContactInfo.vimeo} aria-label="vimeo">
             <FontAwesomeIcon icon={faVimeo} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={data.contentfulContactInfo.instagram}>
+          <a href={data.contentfulContactInfo.instagram} aria-label="instagram">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={`mailto:${data.contentfulContactInfo.email}`}>
+          <a
+            href={`mailto:${data.contentfulContactInfo.email}`}
+            aria-label="email"
+          >
             <FontAwesomeIcon icon={faEnvelopeOpen} />
           </a>
         </li>
         <li className={footerStyles.footerListItem}>
-          <a href={`tel:${data.contentfulContactInfo.phoneNumber}`}>
+          <a
+            href={`tel:${data.contentfulContactInfo.phoneNumber}`}
+            aria-label="phone"
+          >
             <FontAwesomeIcon icon={faPhone} />
           </a>
         </li>
