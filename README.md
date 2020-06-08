@@ -1,5 +1,5 @@
 <h1 align="center">
-  A multimedia portfolio, for a friend (who doesn't code).
+  A multimedia portfolio for a friend (who doesn't code).
 </h1>
 
 Demo: [bibbeyswork.com](https://bibbeyswork.com)
