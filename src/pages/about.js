@@ -9,6 +9,7 @@ const AboutPage = () => {
       <Layout>
         <Head title="About" />
         <h1>About</h1>
+        <hr />
         <p>bio</p>
       </Layout>
     </div>

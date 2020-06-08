@@ -7,18 +7,25 @@ const Feature = () => {
   const data = useStaticQuery(graphql`
     query {
       contentfulFeatureVideo {
-        featureGif {
-          title
-          file {
-            url
-          }
-        }
+        vimeoLink
       }
     }
   `)
-  const feature = `${data.contentfulFeatureVideo.featureGif.file.url}`
+
+  const vimeoId = data.contentfulFeatureVideo.vimeoLink.substring(18, 27)
+  const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
   return (
-    <img className={featureStyles.responsive} src={feature} alt="feature" />
+    <div className={featureStyles.container}>
+      <div className={featureStyles.vimeoWrapper}>
+        <iframe
+          title={vimeoId}
+          src={vimeoSrc}
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
   )
 }
 

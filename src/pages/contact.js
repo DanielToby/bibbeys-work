@@ -21,6 +21,7 @@ const ContactPage = () => {
       <Layout>
         <Head title="Contact" />
         <h1>Contact me</h1>
+        <hr />
         <p>
           <strong>Email: </strong>
           {data.contentfulContactInfo.email}

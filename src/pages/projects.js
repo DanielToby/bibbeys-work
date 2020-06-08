@@ -24,6 +24,7 @@ const ProjectsPage = () => {
     <Layout>
       <Head title="Projects" />
       <h1>Projects</h1>
+      <hr />
       <ol className={projectStyles.projects}>
         {data.allContentfulProject.edges.map(edge => {
           return (

@@ -1,6 +1,6 @@
 .menu {
   background-color: #0f1218;
-  animation: fadeInAnimation ease 0.25s;
+  animation: drop-down ease 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   text-decoration: none;
@@ -11,7 +11,7 @@
   padding-top: 5px;
 }
 
-@keyframes fadeInAnimation {
+@keyframes drop-down {
   0% {
     max-height: 0;
   }
@@ -20,8 +20,17 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .nav-list {
-  animation: fadeInAnimation ease 0.25s;
+  animation: fade-in ease 1s;
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -30,7 +39,7 @@
 .nav-item {
   display: block;
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-right: 1.3rem;
   text-decoration: none;
 }

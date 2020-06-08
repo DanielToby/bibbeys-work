@@ -1,4 +1,5 @@
 body {
+  z-index: 0;
   background-color: #0f1218;
   color: #0f1218;
 }
@@ -14,6 +15,7 @@ body {
 }
 
 .container {
+  top: 75px;
   z-index: 0;
   margin: 0 auto;
   max-width: 800px;
@@ -24,7 +26,29 @@ body {
 }
 
 .content {
+  padding: 1rem;
   flex-grow: 1;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+.content h1 {
+  font-size: xx-large;
+}
+
+hr {
+  border: 0;
+  height: 0px;
+  border-bottom: 2px solid black;
+  margin: auto;
+  width: 0;
+  animation: separator-width 0.5s ease-out forwards;
+}
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

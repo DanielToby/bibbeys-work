@@ -23,11 +23,6 @@ const IndexPage = () => {
   return (
     <Layout video={true}>
       <Head title="Home" />
-      <ol className={projectStyles.projects}>
-        {data.allContentfulProject.edges.map(edge => {
-          return <div></div>
-        })}
-      </ol>
     </Layout>
   )
 }
