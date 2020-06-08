@@ -2,7 +2,7 @@
   A creative multimedia portfolio, for a friend.
 </h1>
 
-I built this static portfolio using Gatsby JS, to sharpen my frontend skills with React and learn Node for the first time. Data from the site is stored in a Content Management System called Contentful. By creating a content model unique to our needs, Josh can edit site data, contact information, images, projects and photos from [the contentful site](contentful.com). 
+I built this static portfolio using Gatsby JS, to sharpen my frontend skills with React and learn Node for the first time. Data from the site is stored in a Content Management System called Contentful. By creating a content model unique to our needs, Josh can edit site data, contact information, images, projects and photos from the [contentful site](https://contentful.com). 
 
 The site is built and deployed in the cloud using Netlify. Netlify creates a VM to build the site, which executes node API calls and generates a static site. Commits to this repo queue redeploys, which also occur automatically.
 
