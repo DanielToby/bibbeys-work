@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Josh Bibbey's Work",
+    title: "Josh Bibbey",
     author: "Daniel Toby",
   },
 

@@ -7,8 +7,8 @@ const PhotographyPage = () => {
   return (
     <Layout>
       <Head title="Photography" />
-      <hr />
       <h1>Photography</h1>
+      <hr />
     </Layout>
   )
 }
