@@ -8,6 +8,6 @@ I built this static portfolio using Gatsby JS, to sharpen my frontend skills wit
 
 The site is built and deployed in the cloud using Netlify. Netlify automatically initializes a VM for building, which then executes node API calls to generate content. Commits to this repo queue redeploys, which also occur automatically.
 
-This combination of Gatsby, React, Contentful, and Netlify provides a powerful toolkit to build a unique and performant personal site, without the need for Josh to edit code, push breaking changes, or worry about a development environement on his computer. 
+This combination of Gatsby, React, Contentful, and Netlify provides a powerful toolkit to build a unique and performant personal site, without the need for Josh to edit code, push breaking changes, or worry about a development environment on his computer. 
 
 I completed this project in quarantine while waiting to start a new job. Josh, my roommate, needede a flashy site for his work as a multimedia designer. All in all, the only cost to us was the domain. 
