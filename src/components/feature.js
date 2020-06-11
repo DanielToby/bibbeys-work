@@ -15,15 +15,17 @@ const Feature = () => {
   const vimeoId = data.contentfulFeatureVideo.vimeoLink.substring(18, 27)
   const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
   return (
-    <div className={featureStyles.container}>
-      <div className={featureStyles.vimeoWrapper}>
-        <iframe
-          title={vimeoId}
-          src={vimeoSrc}
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
+    <div className={featureStyles.feature}>
+      <div className={featureStyles.container}>
+        <div className={featureStyles.vimeoWrapper}>
+          <iframe
+            title={vimeoId}
+            src={vimeoSrc}
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   )

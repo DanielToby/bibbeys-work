@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -12,27 +13,25 @@ const Layout = props => {
     query {
       contentfulAsset(title: { eq: "background" }) {
         title
-        file {
-          url
+        fluid(maxWidth: 1920) {
+          ...GatsbyContentfulFluid
         }
       }
     }
   `)
 
-  const background = `url(${data.contentfulAsset.file.url})`
-
   return (
     <body>
       <Header />
-      <div
-        style={{ backgroundImage: background }}
+      <BackgroundImage
         className={layoutStyles.background}
+        fluid={data.contentfulAsset.fluid}
       >
         {props.video && <Feature />}
         <div className={layoutStyles.container}>
           <div className={layoutStyles.content}>{props.children}</div>
         </div>
-      </div>
+      </BackgroundImage>
       <Footer />
     </body>
   )

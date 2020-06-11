@@ -6,12 +6,17 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Josh Bibbey",
+    title: "Work by Josh Bibbey",
     author: "Daniel Toby",
+    description: "The creative portfolio of Josh Bibbey",
+    url: "https://bibbeyswork.com",
   },
 
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -39,7 +44,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {

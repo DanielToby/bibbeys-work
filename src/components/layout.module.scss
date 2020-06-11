@@ -5,12 +5,10 @@ body {
 }
 
 .background {
-  border-radius: 10px;
-  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-repeat: repeat-y;
   background-size: cover;
-  background-color: #0f1218;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
   margin-bottom: 150px;
 }
 
@@ -18,7 +16,7 @@ body {
   top: 75px;
   z-index: 0;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
