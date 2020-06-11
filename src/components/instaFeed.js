@@ -11,8 +11,6 @@ const InstaFeed = () => {
         edges {
           node {
             id
-            likes
-            caption
             localFile {
               childImageSharp {
                 fluid(maxWidth: 600, quality: 100) {
