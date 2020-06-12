@@ -35,7 +35,7 @@ const IndexPage = () => {
           options
         )}
       </div>
-      <InstaFeed />
+      {/* <InstaFeed /> */}
     </Layout>
   )
 }

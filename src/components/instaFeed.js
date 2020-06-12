@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import instaFeedStyles from "./instaFeed.module.scss"
 
 const InstaFeed = () => {
+  {
+    /*
   const data = useStaticQuery(graphql`
     query {
       allInstaNode {
@@ -27,10 +29,13 @@ const InstaFeed = () => {
       }
     }
   `)
-
+  */
+  }
   return (
     <div>
+      {/*
       <div className={instaFeedStyles.row}>
+        
         <div className={instaFeedStyles.column}>
           <Img
             fluid={
@@ -102,6 +107,7 @@ const InstaFeed = () => {
           <i>see more</i>
         </a>
       </div>
+      */}
     </div>
   )
 }
