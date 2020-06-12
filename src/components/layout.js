@@ -37,12 +37,14 @@ const Layout = props => {
       <BackgroundImage
         className={layoutStyles.background}
         fluid={background.node.fluid}
+        backgroundColor={`#658f9e`}
       >
         {props.video && <Feature />}
         <div className={layoutStyles.container}>
           <BackgroundImage
             fluid={contentBackground.node.fluid}
             className={layoutStyles.content}
+            backgroundColor={`#fcfcfc`}
           >
             {props.children}
           </BackgroundImage>
