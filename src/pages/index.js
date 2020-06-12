@@ -5,6 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import InstaFeed from "../components/instaFeed"
+import Menu from "../components/menu"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,6 +37,7 @@ const IndexPage = () => {
         )}
       </div>
       {/* <InstaFeed /> */}
+      <Menu />
     </Layout>
   )
 }

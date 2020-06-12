@@ -17,10 +17,10 @@ const ContactPage = () => {
     <div>
       <Layout>
         <Head title="Contact" />
-        <h1>Contact me</h1>
+        <h1>Let's get in touch!</h1>
         <hr />
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <div>
+          <div style={{ width: "60%" }}>
             <div style={{ height: "40px" }} />
             <form
               name="contact"
@@ -28,7 +28,15 @@ const ContactPage = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
-              <input name="name" placeholder="Your Name" type="text" />
+              <input name="name" placeholder="Name" type="text" />
+              <div style={{ height: "10px" }} />
+              <input name="email" placeholder="Email" type="email"></input>
+              <div style={{ height: "10px" }} />
+              <textarea
+                placeholder="Message"
+                style={{ width: "100%", height: "200px" }}
+                name="message"
+              ></textarea>
               <button>Send</button>
             </form>
           </div>

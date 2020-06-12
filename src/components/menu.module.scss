@@ -1,14 +1,13 @@
 .menu {
-  background-color: #0f1218;
+  background-color: inherit;
   animation: drop-down ease 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   text-decoration: none;
   display: flex;
   justify-content: center;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   padding-top: 5px;
+  color: inherit;
 }
 
 @keyframes drop-down {
@@ -38,7 +37,7 @@
 
 .nav-item {
   display: block;
-  color: #f4f4f4;
+  color: inherit;
   font-size: 0.8rem;
   margin-right: 1.3rem;
   text-decoration: none;
