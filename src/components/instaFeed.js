@@ -39,17 +39,7 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[1].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
               data.allInstaNode.edges[2].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[3].node.localFile.childImageSharp.fluid
             }
           />
           <Img
@@ -59,19 +49,7 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[5].node.localFile.childImageSharp.fluid
-            }
-          />
-        </div>
-        <div className={instaFeedStyles.column}>
-          <Img
-            fluid={
               data.allInstaNode.edges[6].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[7].node.localFile.childImageSharp.fluid
             }
           />
           <Img
@@ -81,12 +59,34 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[9].node.localFile.childImageSharp.fluid
+              data.allInstaNode.edges[10].node.localFile.childImageSharp.fluid
+            }
+          />
+        </div>
+        <div className={instaFeedStyles.column}>
+          <Img
+            fluid={
+              data.allInstaNode.edges[1].node.localFile.childImageSharp.fluid
             }
           />
           <Img
             fluid={
-              data.allInstaNode.edges[10].node.localFile.childImageSharp.fluid
+              data.allInstaNode.edges[3].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[5].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[7].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[9].node.localFile.childImageSharp.fluid
             }
           />
           <Img

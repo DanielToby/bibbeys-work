@@ -17,17 +17,22 @@ body {
   z-index: 0;
   margin: 0 auto;
   max-width: 900px;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  border-radius: 10px;
 }
 
 .content {
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
   padding: 1rem;
   flex-grow: 1;
   border-radius: 10px;
-  background-color: #ffffff;
 }
 
 .content h1 {
