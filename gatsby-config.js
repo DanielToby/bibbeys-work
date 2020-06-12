@@ -24,12 +24,14 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    /** 
     {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `josh_bibbey`,
       },
     },
+    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {

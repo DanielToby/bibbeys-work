@@ -9,9 +9,6 @@ const ContactPage = () => {
     query {
       contentfulContactInfo {
         email
-        phoneNumber
-        instagram
-        vimeo
       }
     }
   `)
@@ -20,26 +17,21 @@ const ContactPage = () => {
     <div>
       <Layout>
         <Head title="Contact" />
-        <div style={{ textAlign: "center" }}>
-          <h1>Contact me</h1>
-          <hr />
-          <div style={{ height: "40px" }} />
-          <p>
-            <strong>Email: </strong>
-            {data.contentfulContactInfo.email}
-          </p>
-          <p>
-            <strong>Phone Number: </strong>
-            {data.contentfulContactInfo.phoneNumber}
-          </p>
-          <p>
-            <strong>Instagram: </strong>{" "}
-            <a href={data.contentfulContactInfo.instagram}>Josh_Bibbey</a>
-          </p>
-          <p>
-            <strong>Vimeo: </strong>{" "}
-            <a href={data.contentfulContactInfo.vimeo}>Josh Bibbey</a>
-          </p>
+        <h1>Contact me</h1>
+        <hr />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div>
+            <div style={{ height: "40px" }} />
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input name="name" placeholder="Your Name" type="text" />
+              <button>Send</button>
+            </form>
+          </div>
         </div>
       </Layout>
     </div>
