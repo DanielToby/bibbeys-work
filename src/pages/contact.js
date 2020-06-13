@@ -37,7 +37,7 @@ const ContactPage = () => {
                 style={{ width: "100%", height: "200px" }}
                 name="message"
               ></textarea>
-              <button>Send</button>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>
