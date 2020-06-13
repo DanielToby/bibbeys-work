@@ -27,7 +27,7 @@ const IndexPage = () => {
     },
   }
   return (
-    <Layout video={true}>
+    <Layout>
       <Head title="Home" />
       <div style={{ textAlign: "center" }}>
         <h1>MY MISSION</h1>
