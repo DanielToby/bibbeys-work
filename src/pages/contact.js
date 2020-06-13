@@ -23,20 +23,30 @@ const ContactPage = () => {
           <div style={{ width: "60%" }}>
             <div style={{ height: "40px" }} />
             <form
-              name="contact"
+              name="contact-me"
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
-              <input name="name" placeholder="Name" type="text" />
-              <div style={{ height: "10px" }} />
-              <input name="email" placeholder="Email" type="email"></input>
-              <div style={{ height: "10px" }} />
-              <textarea
-                placeholder="Message"
-                style={{ width: "100%", height: "200px" }}
-                name="message"
-              ></textarea>
+              <label>
+                <input name="name" placeholder="Name" type="text" id="name" />
+              </label>
+              <label>
+                <input
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  id="email"
+                ></input>
+              </label>
+              <label>
+                <textarea
+                  placeholder="Message"
+                  style={{ width: "100%", height: "200px" }}
+                  name="message"
+                  id="message"
+                />
+              </label>
               <button type="submit">Send</button>
             </form>
           </div>
