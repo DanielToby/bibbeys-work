@@ -24,14 +24,16 @@ const ContactPage = () => {
             <div style={{ height: "40px" }} />
             <form
               name="contact-me"
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
               <label>
+                Name
                 <input name="name" placeholder="Name" type="text" id="name" />
               </label>
               <label>
+                Email
                 <input
                   name="email"
                   placeholder="Email"
@@ -40,6 +42,7 @@ const ContactPage = () => {
                 ></input>
               </label>
               <label>
+                Message Body
                 <textarea
                   placeholder="Message"
                   style={{ width: "100%", height: "200px" }}
