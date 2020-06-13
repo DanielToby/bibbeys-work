@@ -14,7 +14,6 @@ module.exports = {
 
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-offline",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -24,6 +23,19 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Josh Bibbey's Work`,
+        short_name: `BibbeysWork`,
+        start_url: `/`,
+        background_color: `#658f9e`,
+        theme_color: `#fcfcfc`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    "gatsby-plugin-offline",
     /** 
     {
       resolve: `gatsby-source-instagram`,

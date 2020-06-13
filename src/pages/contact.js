@@ -30,21 +30,31 @@ const ContactPage = () => {
             >
               <label>
                 Name
-                <input name="name" placeholder="Name" type="text" id="name" />
+                <div style={{ height: "10px" }} />
+                <input
+                  name="name"
+                  placeholder="Joe Schmoe"
+                  type="text"
+                  id="name"
+                />
               </label>
+              <div style={{ height: "10px" }} />
               <label>
                 Email
+                <div style={{ height: "10px" }} />
                 <input
                   name="email"
-                  placeholder="Email"
+                  placeholder="joe@schmoe.com"
                   type="email"
                   id="email"
                 ></input>
               </label>
+              <div style={{ height: "10px" }} />
               <label>
                 Message Body
+                <div style={{ height: "10px" }} />
                 <textarea
-                  placeholder="Message"
+                  placeholder="Dear Josh..."
                   style={{ width: "100%", height: "200px" }}
                   name="message"
                   id="message"
