@@ -11,38 +11,36 @@ import layoutStyles from "./layout.module.scss"
 const Layout = props => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulAsset {
-        edges {
-          node {
-            title
-            fluid(maxWidth: 1920) {
-              ...GatsbyContentfulFluid
-            }
+      contentfulBackgrounds {
+        siteBackground {
+          fluid(maxWidth: 1920) {
+            ...GatsbyContentfulFluid
+          }
+        }
+        contentBackground {
+          fluid(maxWidth: 900) {
+            ...GatsbyContentfulFluid
           }
         }
       }
     }
   `)
 
-  const background = data.allContentfulAsset.edges.find(
-    edge => edge.node.title === "background"
-  )
-  const contentBackground = data.allContentfulAsset.edges.find(
-    edge => edge.node.title === "Content Background"
-  )
+  const siteBackground = data.contentfulBackgrounds.siteBackground.fluid
+  const contentBackground = data.contentfulBackgrounds.contentBackground.fluid
 
   return (
     <body>
       <Header />
       <BackgroundImage
         className={layoutStyles.background}
-        fluid={background.node.fluid}
+        fluid={siteBackground}
         backgroundColor={`#658f9e`}
       >
         {props.video && <Feature />}
         <div className={layoutStyles.container}>
           <BackgroundImage
-            fluid={contentBackground.node.fluid}
+            fluid={contentBackground}
             className={layoutStyles.content}
             backgroundColor={`#fcfcfc`}
           >
