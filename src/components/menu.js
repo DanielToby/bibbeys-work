@@ -23,7 +23,7 @@ const Menu = () => {
               activeClassName={menuStyles.activeNavItem}
               to="/projects"
             >
-              Projects
+              Videos
             </Link>
           </li>
           <li>

@@ -13,6 +13,7 @@ export const query = graphql`
       body {
         json
       }
+      vimeoLink
     }
   }
 `
@@ -28,6 +29,9 @@ const Project = props => {
     },
   }
 
+  const vimeoId = props.data.contentfulProject.vimeoLink.substring(18, 27)
+  const vimeoSrc = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&loop=1`
+
   return (
     <Layout>
       <Head title={props.data.contentfulProject.title} />
@@ -37,6 +41,16 @@ const Project = props => {
         props.data.contentfulProject.body.json,
         options
       )}
+      <div style={{ margin: "auto", width: "80%", padding: "10px" }}>
+        <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+          <iframe
+            title={vimeoId}
+            src={vimeoSrc}
+            frameborder="0"
+            allowfullscreen
+          />
+        </div>
+      </div>
     </Layout>
   )
 }

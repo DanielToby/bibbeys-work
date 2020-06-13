@@ -24,7 +24,7 @@ const Feature = () => {
             frameborder="0"
             allow="autoplay; fullscreen"
             allowfullscreen
-          ></iframe>
+          />
         </div>
       </div>
     </div>
