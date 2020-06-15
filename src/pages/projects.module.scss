@@ -3,39 +3,72 @@
   margin: 0;
 }
 
-.container {
-  padding: 10px;
-  width: 60%;
-  margin: auto;
-}
-.vimeoWrapper {
-  padding: 56.25% 0 0 0;
-  position: relative;
-}
-
 .project {
   margin: 1rem 0;
 
   a {
+    display: flex;
+    justify-content: space-between;
     border-radius: 15px;
     background: #ebebeb;
     color: #000000;
-    display: block;
     padding: 1rem;
     text-decoration: none;
+    max-height: 50vh;
+    overflow: hidden;
   }
 
-  a:hover {
-    background: #e6e6e6;
+  details {
+    flex: 45%;
+  }
+
+  .fadeout {
+    height: 100%;
+    position: relative;
+    bottom: 4em;
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      #ebebeb 100%
+    );
+    background-image: -moz-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      #ebebeb 100%
+    );
+    background-image: -o-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      #ebebeb 100%
+    );
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #ebebeb 100%);
+    background-image: -ms-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      #ebebeb 100%
+    );
+  }
+
+  .container {
+    flex: 45%;
+    vertical-align: middle;
+  }
+
+  .vimeoWrapper {
+    vertical-align: middle;
+    padding: 56.25% 0 0 0;
+    position: relative;
   }
 
   h2 {
-    margin-bottom: 0;
+    font-size: large;
   }
 
-  p {
+  h3 {
     color: #777777;
     font-size: 0.8rem;
     font-style: italic;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: #777777;
+    max-width: 80%;
   }
 }

@@ -35,13 +35,14 @@ const Project = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulProject.title} />
+      <div style={{ height: "20px" }} />
       <h1>{props.data.contentfulProject.title}</h1>
       <p>{props.data.contentfulProject.publishedDate}</p>
       {documentToReactComponents(
         props.data.contentfulProject.body.json,
         options
       )}
-      <div style={{ margin: "auto", width: "80%", padding: "10px" }}>
+      <div style={{ margin: "auto", width: "100%", padding: "10px" }}>
         <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
           <iframe
             title={vimeoId}
