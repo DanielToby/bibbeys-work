@@ -34,6 +34,7 @@ const AboutPage = () => {
     <div>
       <Layout>
         <Head title="About" />
+        <div style={{ height: "20px" }} />
         <div style={{ textAlign: "center" }}>
           <Img
             style={{ borderRadius: "50%" }}
