@@ -5,6 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Feature from "../components/feature"
+import ContentHeader from "../components/contentHeader"
 import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
@@ -39,6 +40,7 @@ const Layout = props => {
       >
         {props.video && <Feature />}
         <div className={layoutStyles.container}>
+          {props.page && <ContentHeader page={props.page} />}
           <BackgroundImage
             fluid={contentBackground}
             className={layoutStyles.content}

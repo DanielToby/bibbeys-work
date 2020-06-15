@@ -4,12 +4,13 @@
 }
 
 .column {
-  flex: 50%;
-  max-width: 50%;
+  flex: 33%;
+  max-width: 33%;
 }
 
 .column img {
   vertical-align: middle;
+  padding: 5px;
   margin: auto;
   width: 100%;
 }

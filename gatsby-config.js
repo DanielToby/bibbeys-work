@@ -36,14 +36,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    /** 
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `josh_bibbey`,
+        username: `10446324833`,
       },
     },
-    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {

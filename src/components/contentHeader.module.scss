@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+}
+
+.title {
+  font-size: 4vw;
+  font-family: "Permanent Marker", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  transform: translate(-50%, 0%);
+  color: rgb(255, 51, 51);
+}

@@ -5,9 +5,8 @@ import Head from "../components/head"
 
 const PhotographyPage = () => {
   return (
-    <Layout>
+    <Layout page="photo">
       <Head title="Photography" />
-      <h1>Photography</h1>
       <hr />
     </Layout>
   )

@@ -1,23 +1,13 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 
 const ContactPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      contentfulContactInfo {
-        email
-      }
-    }
-  `)
-
   return (
     <div>
-      <Layout>
+      <Layout page="contact">
         <Head title="Contact" />
-        <h1>Let's get in touch!</h1>
         <hr />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ width: "60%" }}>
