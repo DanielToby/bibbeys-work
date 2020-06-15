@@ -8,7 +8,7 @@ import Menu from "./menu"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const [open, setOpen] = useState()
+  const [open, setOpen] = useState(true)
   const [animateLogo, setAnimateLogo] = useState(true)
   const handleBurgerClick = () => {
     setOpen(!open)
