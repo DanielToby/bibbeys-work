@@ -10,7 +10,9 @@ import headerStyles from "./header.module.scss"
 const Header = () => {
   const [animateLogo, setAnimateLogo] = useState(true)
 
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600)
+  const [isDesktop, setIsDesktop] = useState(
+    typeof window !== "undefined" && window.innerWidth > 600
+  )
   const updateMedia = () => {
     setIsDesktop(window.innerWidth > 600)
     setOpen(window.innerWidth > 600)
