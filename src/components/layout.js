@@ -31,7 +31,7 @@ const Layout = props => {
   const contentBackground = data.contentfulBackgrounds.contentBackground.fluid
 
   return (
-    <div className={layoutStyles.wrapper}>
+    <body>
       <Header />
       <BackgroundImage
         className={layoutStyles.background}
@@ -51,7 +51,7 @@ const Layout = props => {
         </div>
       </BackgroundImage>
       <Footer />
-    </div>
+    </body>
   )
 }
 
