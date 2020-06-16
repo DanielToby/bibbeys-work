@@ -38,6 +38,7 @@ const IndexPage = () => {
       </div>
       <InstaFeed />
       <Menu />
+      <div style={{ height: "20px" }}></div>
     </Layout>
   )
 }

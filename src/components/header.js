@@ -10,7 +10,9 @@ import headerStyles from "./header.module.scss"
 const Header = () => {
   const [animateLogo, setAnimateLogo] = useState(true)
 
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600)
   const updateMedia = () => {
+    setIsDesktop(window.innerWidth > 600)
     setOpen(window.innerWidth > 600)
   }
   useEffect(() => {
@@ -18,7 +20,7 @@ const Header = () => {
     return () => window.removeEventListener("resize", updateMedia)
   })
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(isDesktop)
   const handleBurgerClick = () => {
     setOpen(!open)
   }
