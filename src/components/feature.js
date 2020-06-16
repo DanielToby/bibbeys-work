@@ -21,9 +21,9 @@ const Feature = () => {
           <iframe
             title={vimeoId}
             src={vimeoSrc}
-            frameborder="0"
+            frameBorder="0"
             allow="autoplay; fullscreen"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
       </div>

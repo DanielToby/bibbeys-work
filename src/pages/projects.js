@@ -60,8 +60,8 @@ const ProjectsPage = () => {
                         18,
                         27
                       )}`}
-                      frameborder="0"
-                      allowfullscreen
+                      frameBorder="0"
+                      allowFullScreen
                     />
                   </div>
                 </div>

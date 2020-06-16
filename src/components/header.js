@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Typist from "react-typist"
 import HamburgerMenu from "react-hamburger-menu"
@@ -8,8 +8,17 @@ import Menu from "./menu"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const [open, setOpen] = useState(true)
   const [animateLogo, setAnimateLogo] = useState(true)
+
+  const updateMedia = () => {
+    setOpen(window.innerWidth > 600)
+  }
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia)
+    return () => window.removeEventListener("resize", updateMedia)
+  })
+
+  const [open, setOpen] = useState(true)
   const handleBurgerClick = () => {
     setOpen(!open)
   }
