@@ -45,6 +45,29 @@
     );
   }
 
+  @media screen and (max-width: 600px) {
+    a {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 15px;
+      background: #ebebeb;
+      color: #000000;
+      padding: 1rem;
+      text-decoration: none;
+      max-height: 50vh;
+      overflow: hidden;
+    }
+    .container {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: #777777;
+    }
+  }
+
   .container {
     flex: 45%;
     vertical-align: middle;
@@ -69,6 +92,5 @@
   p {
     font-size: 0.8rem;
     color: #777777;
-    max-width: 80%;
   }
 }
