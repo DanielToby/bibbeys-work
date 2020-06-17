@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Img from "gatsby-image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFile } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -22,6 +24,11 @@ const IndexPage = () => {
         headshot {
           fixed(width: 200, height: 200) {
             ...GatsbyContentfulFixed
+          }
+        }
+        resume {
+          file {
+            url
           }
         }
       }
@@ -45,9 +52,16 @@ const IndexPage = () => {
           fixed={data.contentfulAboutMe.headshot.fixed}
         />
         <h1>
-          <span className={indexStyles.aboutHighlight}>About Me</span>
+          <span className={indexStyles.aboutHighlight}>Josh Bibbey</span>
         </h1>
-
+        <a
+          className={indexStyles.resumeLink}
+          href={data.contentfulAboutMe.resume.file.url}
+          aria-label="resume"
+        >
+          RESUM&Eacute; &nbsp; <FontAwesomeIcon icon={faFile} />
+        </a>
+        <div style={{ height: "40px" }} />
         {documentToReactComponents(data.contentfulAboutMe.body.json, options)}
         <hr />
         <div style={{ height: "40px" }} />
