@@ -39,7 +39,7 @@ const Layout = props => {
         backgroundColor={`#658f9e`}
       >
         <div style={{ height: "80px" }} />
-        {props.video && <Feature />}
+        {props.video ? <Feature /> : <div style={{ height: "40px" }} />}
         <div className={layoutStyles.container}>
           {props.page && <ContentHeader page={props.page} />}
           <BackgroundImage
