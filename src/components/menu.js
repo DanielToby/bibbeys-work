@@ -39,9 +39,9 @@ const Menu = () => {
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}
-              to="/about"
+              to="/design"
             >
-              About
+              Design
             </Link>
           </li>
           <li className={menuStyles.fifth}>

@@ -1,20 +1,16 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import galleryStyles from "./gallery.module.scss"
 
-const Gallery = () => {
+const DesignGallery = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPhotography {
+      allContentfulDesign {
         edges {
           node {
-            description {
-              json
-            }
-            photos {
+            designs {
               fluid(maxWidth: 300) {
                 ...GatsbyContentfulFluid
               }
@@ -24,15 +20,6 @@ const Gallery = () => {
       }
     }
   `)
-  const options = {
-    renderNode: {
-      "embedded-asset-block": node => {
-        const alt = node.data.target.fields.title["en-US"]
-        const url = node.data.target.fields.file["en-US"].url
-        return <img alt={alt} src={url} />
-      },
-    },
-  }
   const threeArrays = myArray => {
     var index = 0
     var arrayLength = myArray.length
@@ -48,19 +35,16 @@ const Gallery = () => {
 
   return (
     <div>
-      {data.allContentfulPhotography.edges.map(edge => {
+      {data.allContentfulDesign.edges.map(edge => {
         return (
           <div>
-            <p className={galleryStyles.description}>
-              {documentToReactComponents(edge.node.description.json, options)}
-            </p>
             <div className={galleryStyles.row}>
-              {threeArrays(edge.node.photos).map(chunk => {
+              {threeArrays(edge.node.designs).map(chunk => {
                 console.log(chunk)
                 return (
                   <div className={galleryStyles.column}>
-                    {chunk.map(photo => {
-                      return <Img fluid={photo.fluid} />
+                    {chunk.map(design => {
+                      return <Img fluid={design.fluid} />
                     })}
                   </div>
                 )
@@ -74,4 +58,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default DesignGallery

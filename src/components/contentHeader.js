@@ -23,6 +23,11 @@ const ContentHeader = props => {
             ...GatsbyContentfulFluid
           }
         }
+        designBackground {
+          fluid(maxWidth: 1920) {
+            ...GatsbyContentfulFluid
+          }
+        }
       }
     }
   `)
@@ -30,6 +35,7 @@ const ContentHeader = props => {
   const photoBackground = data.contentfulBackgrounds.photoBackground.fluid
   const videoBackground = data.contentfulBackgrounds.videoBackground.fluid
   const contactBackground = data.contentfulBackgrounds.contactBackground.fluid
+  const designBackground = data.contentfulBackgrounds.designBackground.fluid
 
   const source = page => {
     switch (page) {
@@ -39,6 +45,8 @@ const ContentHeader = props => {
         return videoBackground
       case "contact":
         return contactBackground
+      case "design":
+        return designBackground
       default:
         return null
     }
@@ -52,6 +60,8 @@ const ContentHeader = props => {
         return "Videography"
       case "contact":
         return "Contact Me"
+      case "design":
+        return "Design"
       default:
         return "Shouldn't Be Here"
     }
