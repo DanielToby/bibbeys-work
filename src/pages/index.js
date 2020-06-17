@@ -59,7 +59,7 @@ const IndexPage = () => {
           href={data.contentfulAboutMe.resume.file.url}
           aria-label="resume"
         >
-          RESUM&Eacute; &nbsp; <FontAwesomeIcon icon={faFile} />
+          RESUM&Eacute; &nbsp; <FontAwesomeIcon icon={faFile} size="small" />
         </a>
         <div style={{ height: "40px" }} />
         {documentToReactComponents(data.contentfulAboutMe.body.json, options)}

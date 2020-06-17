@@ -4,6 +4,16 @@ body {
   color: #0f1218;
 }
 
+.spacer {
+  height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .spacer {
+    height: 0;
+  }
+}
+
 .background {
   background-position: bottom center;
   background-repeat: repeat-y;
