@@ -8,7 +8,7 @@ const Menu = () => {
     <div className={menuStyles.menu}>
       <nav>
         <ul className={menuStyles.navList}>
-          <li>
+          <li className={menuStyles.first}>
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}
@@ -17,7 +17,7 @@ const Menu = () => {
               Home
             </Link>
           </li>
-          <li>
+          <li className={menuStyles.second}>
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}
@@ -26,7 +26,7 @@ const Menu = () => {
               Videos
             </Link>
           </li>
-          <li>
+          <li className={menuStyles.third}>
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}
@@ -35,7 +35,7 @@ const Menu = () => {
               Photos
             </Link>
           </li>
-          <li>
+          <li className={menuStyles.fourth}>
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}
@@ -44,7 +44,7 @@ const Menu = () => {
               About
             </Link>
           </li>
-          <li>
+          <li className={menuStyles.fifth}>
             <Link
               className={menuStyles.navItem}
               activeClassName={menuStyles.activeNavItem}

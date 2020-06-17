@@ -38,6 +38,7 @@ const Layout = props => {
         fluid={siteBackground}
         backgroundColor={`#658f9e`}
       >
+        <div style={{ height: "80px" }} />
         {props.video && <Feature />}
         <div className={layoutStyles.container}>
           {props.page && <ContentHeader page={props.page} />}

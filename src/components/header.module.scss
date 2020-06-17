@@ -1,17 +1,23 @@
+.wrapper {
+  background: rgba(15, 18, 24, 0.6);
+  backdrop-filter: blur(40px);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .header {
   padding: 15px;
   width: 100%;
   height: 75px;
   top: 0;
   font-size: medium;
-  background: #0f1218;
   color: #f4f4f4;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: -1;
 }
 
 .content {
@@ -34,10 +40,7 @@
 
 .menuContainer {
   z-index: 5;
-  position: fixed;
   width: 100%;
-  background: rgba(15, 18, 24, 0.4);
-  backdrop-filter: blur(20px);
   color: #f4f4f4;
 }
 

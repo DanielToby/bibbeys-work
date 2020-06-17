@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Typist from "react-typist"
 import HamburgerMenu from "react-hamburger-menu"
-import Headroom from "react-headroom"
 
 import Menu from "./menu"
 import headerStyles from "./header.module.scss"
@@ -28,7 +27,7 @@ const Header = () => {
   }
 
   return (
-    <Headroom>
+    <div className={headerStyles.wrapper}>
       <div className={headerStyles.header}>
         <div className={headerStyles.content}>
           {animateLogo ? (
@@ -74,7 +73,7 @@ const Header = () => {
           <Menu />
         </div>
       )}
-    </Headroom>
+    </div>
   )
 }
 

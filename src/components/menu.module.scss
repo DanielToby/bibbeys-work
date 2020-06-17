@@ -1,5 +1,4 @@
 .menu {
-  background-color: inherit;
   animation: drop-down ease 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -31,10 +30,39 @@
   .nav-item {
     color: inherit;
     font-size: 1rem;
-    font-weight: bold;
     margin-right: 1.3rem;
     text-decoration: none;
   }
+}
+
+.first {
+  animation: fade-in ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.second {
+  animation: fade-in ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.third {
+  animation: fade-in ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fourth {
+  animation: fade-in ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fifth {
+  animation: fade-in ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes drop-down {
@@ -48,10 +76,10 @@
 
 @keyframes drop-down-mobile {
   0% {
-    max-height: 0;
+    height: 0;
   }
   100% {
-    height: 210px;
+    height: 220px;
   }
 }
 
@@ -65,7 +93,6 @@
 }
 
 .nav-list {
-  animation: fade-in ease 1s;
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -75,7 +102,6 @@
   display: block;
   color: inherit;
   font-size: 1rem;
-  font-weight: bold;
   margin-right: 2rem;
   text-decoration: none;
 }
