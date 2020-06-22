@@ -44,7 +44,7 @@ const IndexPage = () => {
     },
   }
   return (
-    <Layout video={true}>
+    <Layout>
       <Head title="Home" />
       <div className={indexStyles.textWrapper}>
         <Img
@@ -77,9 +77,7 @@ const IndexPage = () => {
         <hr />
         <div style={{ height: "40px" }} />
       </div>
-      {
-        //<InstaFeed />
-      }
+      <InstaFeed />
       <Menu />
       <div style={{ height: "20px" }}></div>
     </Layout>
