@@ -52,7 +52,7 @@ const IndexPage = () => {
           fixed={data.contentfulAboutMe.headshot.fixed}
         />
         <h1>
-          <span className={indexStyles.aboutHighlight}>Josh Bibbey</span>
+          <span className={indexStyles.highlight}>Josh Bibbey</span>
         </h1>
         <a
           className={indexStyles.resumeLink}
@@ -67,9 +67,7 @@ const IndexPage = () => {
         <hr />
         <div style={{ height: "40px" }} />
         <h1>
-          <span className={indexStyles.missionHighlight}>
-            Mission Statement
-          </span>
+          <span className={indexStyles.highlight}>Mission Statement</span>
         </h1>
         {documentToReactComponents(
           data.contentfulAboutMe.missionStatement.json,
@@ -79,7 +77,9 @@ const IndexPage = () => {
         <hr />
         <div style={{ height: "40px" }} />
       </div>
-      <InstaFeed />
+      {
+        //<InstaFeed />
+      }
       <Menu />
       <div style={{ height: "20px" }}></div>
     </Layout>
