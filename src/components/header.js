@@ -26,7 +26,7 @@ const Header = () => {
       <div className={headerStyles.header}>
         <div className={headerStyles.content}>
           <Typist
-            avgTypingDelay={20}
+            avgTypingDelay={30}
             cursor={{
               show: false,
             }}

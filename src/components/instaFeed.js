@@ -13,7 +13,7 @@ const InstaFeed = () => {
             id
             localFile {
               childImageSharp {
-                fluid(maxWidth: 600, quality: 100) {
+                fluid(maxWidth: 300, quality: 100) {
                   ...GatsbyImageSharpFluid
                   ...GatsbyImageSharpFluidLimitPresentationSize
                 }
@@ -38,17 +38,24 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[1].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[2].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
               data.allInstaNode.edges[3].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[6].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[9].node.localFile.childImageSharp.fluid
+            }
+          />
+        </div>
+        <div className={instaFeedStyles.column}>
+          <Img
+            fluid={
+              data.allInstaNode.edges[1].node.localFile.childImageSharp.fluid
             }
           />
           <Img
@@ -58,19 +65,24 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[5].node.localFile.childImageSharp.fluid
+              data.allInstaNode.edges[7].node.localFile.childImageSharp.fluid
+            }
+          />
+          <Img
+            fluid={
+              data.allInstaNode.edges[10].node.localFile.childImageSharp.fluid
             }
           />
         </div>
         <div className={instaFeedStyles.column}>
           <Img
             fluid={
-              data.allInstaNode.edges[6].node.localFile.childImageSharp.fluid
+              data.allInstaNode.edges[2].node.localFile.childImageSharp.fluid
             }
           />
           <Img
             fluid={
-              data.allInstaNode.edges[7].node.localFile.childImageSharp.fluid
+              data.allInstaNode.edges[5].node.localFile.childImageSharp.fluid
             }
           />
           <Img
@@ -80,49 +92,7 @@ const InstaFeed = () => {
           />
           <Img
             fluid={
-              data.allInstaNode.edges[9].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[10].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
               data.allInstaNode.edges[11].node.localFile.childImageSharp.fluid
-            }
-          />
-        </div>
-        <div className={instaFeedStyles.column}>
-          <Img
-            fluid={
-              data.allInstaNode.edges[12].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[13].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[14].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[15].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[16].node.localFile.childImageSharp.fluid
-            }
-          />
-          <Img
-            fluid={
-              data.allInstaNode.edges[17].node.localFile.childImageSharp.fluid
             }
           />
         </div>
