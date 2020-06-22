@@ -7,8 +7,6 @@ import Menu from "./menu"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const [animateLogo, setAnimateLogo] = useState(true)
-
   const [isDesktop, setIsDesktop] = useState(
     typeof window !== "undefined" && window.innerWidth > 600
   )
@@ -27,25 +25,16 @@ const Header = () => {
     <div className={headerStyles.wrapper}>
       <div className={headerStyles.header}>
         <div className={headerStyles.content}>
-          {animateLogo ? (
-            <Typist
-              avgTypingDelay={20}
-              cursor={{
-                show: false,
-              }}
-              onTypingDone={() => {
-                setAnimateLogo(false)
-              }}
-            >
-              <Link className={headerStyles.title} to="/">
-                Josh Bibbey's Work.
-              </Link>
-            </Typist>
-          ) : (
+          <Typist
+            avgTypingDelay={20}
+            cursor={{
+              show: false,
+            }}
+          >
             <Link className={headerStyles.title} to="/">
               Josh Bibbey's Work.
             </Link>
-          )}
+          </Typist>
         </div>
         <div className={headerStyles.burger}>
           <HamburgerMenu
