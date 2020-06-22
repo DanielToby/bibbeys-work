@@ -22,6 +22,13 @@ const ProjectsPage = () => {
           }
         }
       }
+      contentfulBackgrounds {
+        videoBackground {
+          fluid(maxWidth: 900) {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
     }
   `)
 
@@ -36,7 +43,10 @@ const ProjectsPage = () => {
   }
 
   return (
-    <Layout page="video">
+    <Layout
+      fluid={data.contentfulBackgrounds.videoBackground.fluid}
+      title={"Videography"}
+    >
       <Head title="Projects" />
       <hr />
       <ol className={projectStyles.projects}>

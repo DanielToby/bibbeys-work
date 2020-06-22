@@ -1,12 +1,27 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 
 const ContactPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      contentfulBackgrounds {
+        contactBackground {
+          fluid(maxWidth: 900) {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
-      <Layout page="contact">
+      <Layout
+        fluid={data.contentfulBackgrounds.contactBackground.fluid}
+        title={"Contact Me"}
+      >
         <Head title="Contact" />
         <hr />
         <div style={{ display: "flex", justifyContent: "center" }}>

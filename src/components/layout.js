@@ -41,7 +41,9 @@ const Layout = props => {
         <div style={{ height: "80px" }} />
         {props.video ? <Feature /> : <div className={layoutStyles.spacer} />}
         <div className={layoutStyles.container}>
-          {props.page && <ContentHeader page={props.page} />}
+          {props.title && (
+            <ContentHeader fluid={props.fluid} title={props.title} />
+          )}
           <BackgroundImage
             fluid={contentBackground}
             className={layoutStyles.content}
