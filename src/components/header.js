@@ -22,9 +22,6 @@ const Header = () => {
   })
 
   const [open, setOpen] = useState(isDesktop)
-  const handleBurgerClick = () => {
-    setOpen(!open)
-  }
 
   return (
     <div className={headerStyles.wrapper}>
@@ -54,7 +51,9 @@ const Header = () => {
           <HamburgerMenu
             color="#f4f4f4"
             isOpen={open}
-            menuClicked={handleBurgerClick}
+            menuClicked={() => {
+              setOpen(!open)
+            }}
           />
         </div>
       </div>
