@@ -62,7 +62,7 @@ const IndexPage = () => {
           RESUM&Eacute; &nbsp;{" "}
           <FontAwesomeIcon icon={faFile} style={{ width: "10px" }} />
         </a>
-        {/** 
+
         <div style={{ height: "40px" }} />
         {documentToReactComponents(data.contentfulAboutMe.body.json, options)}
         <hr />
@@ -74,7 +74,7 @@ const IndexPage = () => {
           data.contentfulAboutMe.missionStatement.json,
           options
         )}
-        */}
+
         <div style={{ height: "40px" }} />
         <hr />
         <div style={{ height: "40px" }} />

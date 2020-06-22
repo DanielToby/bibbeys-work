@@ -9,7 +9,9 @@ const PhotographyPage = () => {
     <Layout page="design">
       <Head title="Design" />
       <hr />
-      <DesignGallery />
+      {
+        //<DesignGallery />
+      }
     </Layout>
   )
 }

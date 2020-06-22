@@ -9,22 +9,22 @@ const ContentHeader = props => {
     query {
       contentfulBackgrounds {
         photoBackground {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 900) {
             ...GatsbyContentfulFluid
           }
         }
         videoBackground {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 900) {
             ...GatsbyContentfulFluid
           }
         }
         contactBackground {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 900) {
             ...GatsbyContentfulFluid
           }
         }
         designBackground {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 900) {
             ...GatsbyContentfulFluid
           }
         }
