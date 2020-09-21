@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import Typist from "react-typist"
 import HamburgerMenu from "react-hamburger-menu"
 
 import Menu from "./menu"
@@ -25,16 +24,9 @@ const Header = () => {
     <div className={headerStyles.wrapper}>
       <div className={headerStyles.header}>
         <div className={headerStyles.content}>
-          <Typist
-            avgTypingDelay={30}
-            cursor={{
-              show: false,
-            }}
-          >
-            <Link className={headerStyles.title} to="/">
-              Josh Bibbey's Work.
-            </Link>
-          </Typist>
+          <Link className={headerStyles.title} to="/">
+            Josh Bibbey's Work.
+          </Link>
         </div>
         <div className={headerStyles.burger}>
           <HamburgerMenu

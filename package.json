@@ -47,7 +47,6 @@
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0",
     "react-refresh": "^0.8.3",
-    "react-typist": "^2.0.5",
     "typeface-permanent-marker": "0.0.72"
   },
   "devDependencies": {
