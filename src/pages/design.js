@@ -24,7 +24,6 @@ const DesignPage = () => {
       title={"Design"}
     >
       <Head title="Design" />
-      <hr />
       <DesignGallery />
     </Layout>
   )
