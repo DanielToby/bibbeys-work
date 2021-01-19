@@ -48,7 +48,6 @@ const ProjectsPage = () => {
       title={"Videography"}
     >
       <Head title="Projects" />
-      <hr />
       <ol className={projectStyles.projects}>
         {data.allContentfulProject.edges.map(edge => {
           return (
