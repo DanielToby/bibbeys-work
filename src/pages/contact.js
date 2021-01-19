@@ -23,7 +23,6 @@ const ContactPage = () => {
         title={"Contact Me"}
       >
         <Head title="Contact" />
-        <hr />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ width: "60%" }}>
             <div style={{ height: "40px" }} />
