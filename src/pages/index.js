@@ -7,7 +7,6 @@ import { faFile } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-import InstaFeed from "../components/instaFeed"
 import Menu from "../components/menu"
 import indexStyles from "./index.module.scss"
 
@@ -79,8 +78,6 @@ const IndexPage = () => {
         <hr />
         <div style={{ height: "40px" }} />
       </div>
-
-      <InstaFeed />
       <Menu />
       <div style={{ height: "20px" }}></div>
     </Layout>

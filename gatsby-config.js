@@ -37,12 +37,6 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `10446324833`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
